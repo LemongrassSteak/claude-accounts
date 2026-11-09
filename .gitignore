@@ -1,0 +1,14 @@
+**/bin/
+**/obj/
+.vs/
+.idea/
+artifacts/
+*.user
+*.suo
+*.pfx
+*.snk
+Profiles/
+accounts.json*
+settings.json*
+sign-in-route.json*
+*.log

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <UseAppHost Condition="'$(RuntimeIdentifier)' == ''">false</UseAppHost>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Assets\app.ico</ApplicationIcon>
+    <AssemblyName>ClaudeAccounts</AssemblyName>
+    <Product>Claude Accounts</Product>
+    <Description>Independent profile launcher for Claude Desktop</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClaudeAccounts.Core\ClaudeAccounts.Core.csproj" />
+    <EmbeddedResource Include="Assets\app.ico" />
+  </ItemGroup>
+</Project>
